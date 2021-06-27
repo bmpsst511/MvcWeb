@@ -12,6 +12,10 @@
     2-5 輸入 dotnet ef migrations add InitialCreate 與dotnet ef database update 建立轉移紀錄檔與更新資料庫
 
 ---
-6/28 2021 更新了後台可新增、刪除、修改圖片功能。
+3/22 2021 更新了後台可新增、刪除、修改Banner功能。
+
+---
+
+3/25 2021 更新後台可新增、刪除、修改頁籤功能。
 
 ---
