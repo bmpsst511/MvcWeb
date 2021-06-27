@@ -1,0 +1,53 @@
+@model IEnumerable<MvcWeb.Models.Banner>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3 class="text-center text-uppercase">主圖列表</h3> 
+<p>
+    <a asp-action="Create" class="btn btn-primary rounded-0"><i class="fa fa-plus-circle"></i>新建Banner</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                主圖預覽
+            </th>
+            <th>
+                主圖順序
+            </th>
+            <th>
+                主圖狀態
+            </th>
+            <th>
+                主圖上半部內容
+            </th>
+            <th>
+                主圖下半部內容
+            </th>
+            <th>
+                動作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-asp-route-id = "@item.Id">
+                    <img src="~/Uploads/@item.ProfilePicture" class="img-thumbnail" height="100" width="100" asp-append-version="true"/>
+                </a>
+                <td>@item.bannerIndex</td>
+                <td>@item.bannerState</td>
+                <td>@item.bannerContentUp</td>
+                <td>@item.bannerContentDown</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id ="@item.Id" class="btn btn-sm btm-info rounded-0"><i class="fa fa-pencil-alt">編輯</i></a>
+                    <a asp-action="Delete" asp-route-id ="@item.Id" class="btn btn-sm btm-danger rounded-0"><i class="fa fa-trash-alt">刪除</i></a>
+                </td>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

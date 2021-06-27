@@ -1,0 +1,54 @@
+@model MvcWeb.ViewModels.bannerViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Banner</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="bannerIndex" class="control-label"></label>
+                <input asp-for="bannerIndex" class="form-control" />
+                <span asp-validation-for="bannerIndex" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bannerState" class="control-label"></label>
+                <input asp-for="bannerState" class="form-control" />
+                <span asp-validation-for="bannerState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bannerContentUp" class="control-label"></label>
+                <input asp-for="bannerContentUp" class="form-control" />
+                <span asp-validation-for="bannerContentUp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="bannerContentDown" class="control-label"></label>
+                <input asp-for="bannerContentDown" class="form-control" />
+                <span asp-validation-for="bannerContentDown" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfilePicture" class="control-label"></label>
+                <input asp-for="ProfilePicture" class="form-control" />
+                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,71 @@
+@model MvcWeb.Models.Banner
+
+@{ ViewData["Title"] = "Create"; }
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="text-uppercase">新建主圖</h3>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="bannerIndex" class="control-label">主圖順序</label>
+                        <input asp-for="bannerIndex" class="form-control" />
+                        <span asp-validation-for="bannerIndex" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="ProfileImage" class="control-label">上傳圖片</label>
+                        <div class="custom-file">
+                            <input asp-for="ProfileImage" class="custom-file-input" />
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <span asp-validation-for="ProfileImage" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="bannerState" class="control-label">主圖顯示狀態</label>
+                        <input asp-for="bannerState" class="form-control" />
+                        <span asp-validation-for="bannerState" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="bannerContentUp" class="control-label">主圖上半部內容</label>
+                        <input asp-for="bannerContentUp" class="form-control" />
+                        <span asp-validation-for="bannerContentUp" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="bannerContentDown" class="control-label">主圖下半部內容</label>
+                        <input asp-for="bannerContentDown" class="form-control" />
+                        <span asp-validation-for="bannerContentDown" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="創建" class="btn btn-sm btn-primary rounded-0" />
+                <a asp-action="Index" class="btn btn-sm btn-primary rounded-0">取消</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>// Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });</script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

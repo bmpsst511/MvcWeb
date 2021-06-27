@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Http;
 
-namespace MvcMovie.Models
+namespace MvcWeb.Models
 {
     //
     public class Banner 

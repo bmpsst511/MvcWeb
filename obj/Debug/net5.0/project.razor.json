@@ -15619,8 +15619,23 @@
   "RootNamespace": "MvcWeb",
   "Documents": [
     {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Delete.cshtml",
+      "TargetPath": "Views\\Banner\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Create.cshtml",
+      "TargetPath": "Views\\Banner\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Edit.cshtml",
+      "TargetPath": "Views\\Banner\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15639,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Details.cshtml",
+      "TargetPath": "Views\\Banner\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15651,6 +15671,11 @@
     {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Index.cshtml",
+      "TargetPath": "Views\\Banner\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
