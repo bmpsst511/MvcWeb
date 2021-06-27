@@ -6,8 +6,8 @@
 
 <!-- Header -->
 <header id="header" class="alt">
-    <div class="logo"><a href="~/Home/index">LM Composite <span>Offical Website</span></a></div>
-    <a href="#menu">Menu</a>
+    <div class="logo"><a href="~/Home/index">李仁敦酒煙斗 <span>Offical Website</span></a></div>
+    <a href="#menu">帥炸的頁籤們</a>
 </header>
 
 <!-- Nav -->
@@ -15,8 +15,8 @@
     <ul class="links">
         @foreach (var item in ViewBag.subBoards)
         {
-        @*<li><a href="~/Home/index">首頁</a></li>*@
-        <li><a href="~/@item.Sub_Link/index">@item.Sub_Name</a></li>
+            <li><a href="~/Home/index">首頁</a></li>
+            <li><a href="~/@item.Sub_Link/index">@item.Sub_Name</a></li>
         }
     </ul>
 </nav>
@@ -25,15 +25,18 @@
 <section class="banner full">
     @foreach (var item in ViewBag.banner)
     {
-        <article>
-            <img src="~/Uploads/@item.ProfilePicture" alt="" />
-            <div class="inner">
-                <header>
-                    <p>@item.bannerContentUp</p>
-                    <h2>@item.bannerContentDown</h2>
-                </header>
-            </div>
-        </article>
+        @if(@item.bannerIndex>0 && @item.bannerIndex<10)
+        {
+            <article>
+                <img src="~/Uploads/@item.ProfilePicture" alt="" />
+                <div class="inner">
+                    <header>
+                        <p>@item.bannerContentUp</p>
+                        <h2>@item.bannerContentDown</h2>
+                    </header>
+                </div>
+            </article>
+        }
     }
 </section>
 
@@ -41,51 +44,59 @@
 <section id="one" class="wrapper style2">
     <div class="inner">
         <div class="grid-style">
-
-            <div>
-                <div class="box">
-                    <div class="image fit">
-                        <img src="~/Images/images/pic02.jpg" alt="" />
+            @foreach (var item2 in ViewBag.banner)
+            {
+                @if(@item2.bannerIndex >10 && @item2.bannerIndex<15)
+                {
+                    <div>
+                        <div class="box">
+                            <div class="image fit">
+                                @*<img src="~/Images/images/pic02.jpg" alt="" />*@
+                                <img src="~/Uploads/@item2.ProfilePicture" alt="" />
+                            </div>
+                            <div class="content">
+                                <header class="align-center">
+                                    <p>@item2.bannerContentUp</p>
+                                    <h2>關於我們</h2>
+                                </header>
+                                <p>@item2.bannerContentDown</p>
+                                <footer class="align-center">
+                                    <a href="#" class="button alt">Learn More</a>
+                                </footer>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <header class="align-center">
-                            <p>maecenas sapien feugiat ex purus</p>
-                            <h2>Lorem ipsum dolor</h2>
-                        </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
-                        <footer class="align-center">
-                            <a href="#" class="button alt">Learn More</a>
-                        </footer>
+                }
+                @if(@item2.bannerIndex >15 && @item2.bannerIndex <20)
+                {
+                    <div>
+                        <div class="box">
+                            <div class="image fit">
+                                @*<img src="~/Images/images/pic03.jpg" alt="" />*@
+                                <img src="~/Uploads/@item2.ProfilePicture" alt="" />
+                            </div>
+                            <div class="content">
+                                <header class="align-center">
+                                    <p>@item2.bannerContentUp</p>
+                                    <h2>商品陳列</h2>
+                                </header>
+                                <p>@item2.bannerContentDown</p>
+                                <footer class="align-center">
+                                    <a href="#" class="button alt">Learn More</a>
+                                </footer>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="box">
-                    <div class="image fit">
-                        <img src="~/Images/images/pic03.jpg" alt="" />
-                    </div>
-                    <div class="content">
-                        <header class="align-center">
-                            <p>mattis elementum sapien pretium tellus</p>
-                            <h2>Vestibulum sit amet</h2>
-                        </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
-                        <footer class="align-center">
-                            <a href="#" class="button alt">Learn More</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
+                }
+            }
         </div>
     </div>
 </section><!-- Two -->
 <section id="two" class="wrapper style3">
     <div class="inner">
         <header class="align-center">
-            <p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-            <h2>Morbi maximus justo</h2>
+            <p>你都看到中間頁了，是不是真的覺得阿敦帥到爆</p>
+            <h2>我知道你們都是真心的XDDD</h2>
         </header>
     </div>
 </section>
@@ -94,8 +105,8 @@
 <section id="three" class="wrapper style2">
     <div class="inner">
         <header class="align-center">
-            <p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-            <h2>Morbi maximus justo</h2>
+            <p class="special">全台最強最猛最讚最優秀最厲害最聰明的團隊</p>
+            <h2>團隊成員</h2>
         </header>
         <div class="gallery">
             <div>
@@ -134,7 +145,7 @@
         </ul>
     </div>
     <div class="copyright">
-        Copyright &copy; 黎銘複合材料股份有限公司
+        Copyright &copy; 李仁敦那誒家煙斗
     </div>
 </footer>
 
