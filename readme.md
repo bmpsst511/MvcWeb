@@ -1,4 +1,4 @@
-# MVC網站之實習結束後寫給自己爽的
+# MVC網站練習寫給自己爽的
 ## 我就是一個硬要假掰使用微軟 \.Net Core MVC 架構在我是一顆爛蘋果上看看好不好開發的厭世博士生。
 ---
 ### 對，我期刊要趕出來，然後我竟然在這邊弄這個東西 🤪
@@ -11,4 +11,7 @@
     2-4 輸入cmd : dotnet-aspnet-codegenerator controller -name BannerController -m MVCWebDB -dc MvcWebContext--relativeFolderPath Controllers--useDefaultLayout --referenceScriptLibraries， -name 要新建的控制器名稱, -m 你剛剛建立的model.cs檔, -dc 哪個Migrarion檔名\
     2-5 輸入 dotnet ef migrations add InitialCreate 與dotnet ef database update 建立轉移紀錄檔與更新資料庫
 
+---
 6/28 2021 更新了後台可新增、刪除、修改圖片功能。
+
+---

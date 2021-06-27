@@ -1,0 +1,44 @@
+@model MvcWeb.Models.SubBoard
+
+@{
+    ViewData["Title"] = "Edit";
+ }
+
+<h1>編輯</h1>
+
+<h4>子版</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Sub_Id" />
+            <div class="form-group">
+                <label asp-for="Sub_Name" class="control-label"></label>
+                <input asp-for="Sub_Name" class="form-control" />
+                <span asp-validation-for="Sub_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sub_Link" class="control-label"></label>
+                <input asp-for="Sub_Link" class="form-control" />
+                <span asp-validation-for="Sub_Link" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sub_Index" class="control-label"></label>
+                <input asp-for="Sub_Index" class="form-control" />
+                <span asp-validation-for="Sub_Index" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">返回子版列表</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

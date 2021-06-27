@@ -1,0 +1,47 @@
+@model IEnumerable<MvcWeb.Models.SubBoard>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">新建子版</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                子版名稱
+            </th>
+            <th>
+                給定網址名稱
+            </th>
+            <th>
+                子版順序
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Link)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sub_Index)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Sub_Id">編輯</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Sub_Id">刪除</a>
+                </td>
+            </tr>
+    }
+    </tbody>
+</table>

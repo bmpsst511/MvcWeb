@@ -15629,8 +15629,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SubBoard/Index.cshtml",
+      "TargetPath": "Views\\SubBoard\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SubBoard/Details.cshtml",
+      "TargetPath": "Views\\SubBoard\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15654,6 +15664,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SubBoard/Edit.cshtml",
+      "TargetPath": "Views\\SubBoard\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Details.cshtml",
       "TargetPath": "Views\\Banner\\Details.cshtml",
       "FileKind": "mvc"
@@ -15674,8 +15689,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SubBoard/Delete.cshtml",
+      "TargetPath": "Views\\SubBoard\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/Hielo.cshtml",
+      "TargetPath": "Views\\Shared\\Hielo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Banner/Index.cshtml",
       "TargetPath": "Views\\Banner\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SubBoard/Create.cshtml",
+      "TargetPath": "Views\\SubBoard\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],

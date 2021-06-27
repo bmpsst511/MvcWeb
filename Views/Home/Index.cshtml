@@ -1,8 +1,162 @@
-﻿@{
+﻿@model IEnumerable<MvcWeb.Models.Banner>
+@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/Hielo.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Header -->
+<header id="header" class="alt">
+    <div class="logo"><a href="~/Home/index">LM Composite <span>Offical Website</span></a></div>
+    <a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        @foreach (var item in ViewBag.subBoards)
+        {
+        @*<li><a href="~/Home/index">首頁</a></li>*@
+        <li><a href="~/@item.Sub_Link/index">@item.Sub_Name</a></li>
+        }
+        <!--           
+        <li><a href="~/About/index">關於我們</a></li>
+        <li><a href="~/Cerfication/Index">能力與優勢</a></li>
+        <li><a href="~/Cerfication/Index">產品資料</a></li>
+        <li><a href="~/Cerfication/Index">專業知識</a></li>
+        <li><a href="~/Cerfication/Index">最新消息</a></li>
+        <li><a href="~/Cerfication/Index">技術支援</a></li>
+        <li><a href="~/Cerfication/Index">常見問題</a></li>
+        <li><a href="~/Cerfication/Index">檔案下載</a></li>
+        <li><a href="~/Cerfication/Index">設計規範</a></li>
+        <li><a href="~/Cerfication/Index">產品介紹</a></li>
+        <li><a href="~/Cerfication/Index">設計＆製作</a></li>
+        <li><a href="~/Cerfication/Index">聯絡我們</a></li>
+        <li><a href="~/Banner/Index">主圖控制</a></li>
+        <li><a href="~/SubBoard/Index">子版控制</a></li>
+        -->
+    </ul>
+</nav>
+
+<!-- Banner -->
+<section class="banner full">
+    @foreach (var item in ViewBag.banner)
+    {
+        <article>
+            <img src="~/Uploads/@item.ProfilePicture" alt="" />
+            <div class="inner">
+                <header>
+                    <p>@item.bannerContentUp</p>
+                    <h2>@item.bannerContentDown</h2>
+                </header>
+            </div>
+        </article>
+    }
+</section>
+
+<!-- One -->
+<section id="one" class="wrapper style2">
+    <div class="inner">
+        <div class="grid-style">
+
+            <div>
+                <div class="box">
+                    <div class="image fit">
+                        <img src="~/Images/images/pic02.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <p>maecenas sapien feugiat ex purus</p>
+                            <h2>Lorem ipsum dolor</h2>
+                        </header>
+                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+                        <footer class="align-center">
+                            <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="box">
+                    <div class="image fit">
+                        <img src="~/Images/images/pic03.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <p>mattis elementum sapien pretium tellus</p>
+                            <h2>Vestibulum sit amet</h2>
+                        </header>
+                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+                        <footer class="align-center">
+                            <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section><!-- Two -->
+<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+            <h2>Morbi maximus justo</h2>
+        </header>
+    </div>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style2">
+    <div class="inner">
+        <header class="align-center">
+            <p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+            <h2>Morbi maximus justo</h2>
+        </header>
+        <div class="gallery">
+            <div>
+                <div class="image fit">
+                    <a href="#"><img src="~/Images/images/pic01.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div>
+                <div class="image fit">
+                    <a href="#"><img src="~/Images/images/pic02.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div>
+                <div class="image fit">
+                    <a href="#"><img src="~/Images/images/pic03.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div>
+                <div class="image fit">
+                    <a href="#"><img src="/Images/images/pic04.jpg" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <ul class="icons">
+            @*<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>*@
+            <li><a href="https://www.facebook.com/lm.composite/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        Copyright &copy; 黎銘複合材料股份有限公司
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.scrollex.min.js"></script>
+<script src="~/assets/js/skel.min.js"></script>
+<script src="~/assets/js/util.js"></script>
+<script src="~/assets/js/main.js"></script>

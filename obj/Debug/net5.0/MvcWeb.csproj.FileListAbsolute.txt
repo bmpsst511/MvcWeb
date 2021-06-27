@@ -208,3 +208,9 @@
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Banner/Details.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Banner/Edit.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Banner/Index.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Shared/Hielo.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SubBoard/Create.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SubBoard/Delete.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SubBoard/Details.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SubBoard/Edit.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SubBoard/Index.cshtml.g.cs

@@ -14,7 +14,29 @@ namespace MvcWeb.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.7");
 
-            modelBuilder.Entity("MvcMovie.Models.Banner", b =>
+            modelBuilder.Entity("LMcomposite.Models.SubBoard", b =>
+                {
+                    b.Property<int>("Sub_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Sub_Index")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Sub_Link")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Sub_Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Sub_Id");
+
+                    b.ToTable("SubBoard");
+                });
+
+            modelBuilder.Entity("MvcWeb.Models.Banner", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

@@ -13,4 +13,6 @@ using MvcWeb.Models;
         }
 
         public DbSet<MvcWeb.Models.Banner> Banner { get; set; }
+
+        public DbSet<MvcWeb.Models.SubBoard> SubBoard { get; set; }
     }
