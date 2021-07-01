@@ -21,7 +21,9 @@ namespace MvcWeb.Controllers
         // GET: SubBoard
         public async Task<IActionResult> Index()
         {
-            return View(await _context.SubBoard.ToListAsync());
+            ViewBag.subBoards = _context.SubBoard.OrderBy(x => x.Sub_Index).ToList(); //子板照著設定的Index做排列塞入List
+            //return View(await _context.SubBoard.ToListAsync());
+            return View(ViewBag.subBoards);
         }
 
         // GET: SubBoard/Details/5

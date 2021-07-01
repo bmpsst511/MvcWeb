@@ -6,6 +6,11 @@
 
 <h1>Index</h1>
 
+<!--以下設定讓 後台的 ViewBag.subBoards可以動態加載並使用 HtmlDisplatFor 的方法-->
+@{
+    var subBoard = ViewBag.subBoards as List<MvcWeb.Models.SubBoard>;
+}
+
 <p>
     <a asp-action="Create">新建子版</a>
 </p>
@@ -25,7 +30,8 @@
         </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
+    @*@foreach (var item in Model)*@
+    @foreach (var item in subBoard)
     {
             <tr>
                 <td>
