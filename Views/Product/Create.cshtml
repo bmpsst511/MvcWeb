@@ -1,0 +1,95 @@
+@*@model MvcWeb.Models.Product*@
+@model MvcWeb.ViewModels.productViewModel
+@{ ViewData["Title"] = "Create"; }
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="text-uppercase">新建商品</h3>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productIndex" class="control-label">商品編號</label>
+                        <input asp-for="productIndex" class="form-control" />
+                        <span asp-validation-for="productIndex" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productImage" class="control-label">上傳圖片</label>
+                        <div class="custom-file">
+                            <input asp-for="productImage" class="custom-file-input" />
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <span asp-validation-for="productImage" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productNumber" class="control-label">商品數量</label>
+                        <input asp-for="productNumber" class="form-control" />
+                        <span asp-validation-for="productNumber" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productPrice" class="control-label">商品價錢</label>
+                        <input asp-for="productPrice" class="form-control" />
+                        <span asp-validation-for="productPrice" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productName" class="control-label">商品名稱</label>
+                        <input asp-for="productName" class="form-control" />
+                        <span asp-validation-for="productName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productDescription" class="control-label">商品描述</label>
+                        <input asp-for="productDescription" class="form-control" />
+                        <span asp-validation-for="productDescription" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productUnit" class="control-label">商品單位</label>
+                        <input asp-for="productUnit" class="form-control" />
+                        <span asp-validation-for="productUnit" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productPosition" class="control-label">商品位置</label>
+                        <input asp-for="productPosition" class="form-control" />
+                        <span asp-validation-for="productPosition" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="productPs" class="control-label">商品備註</label>
+                        <input asp-for="productPs" class="form-control" />
+                        <span asp-validation-for="productPs" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="創建" class="btn btn-sm btn-primary rounded-0" />
+                <a asp-action="Index" class="btn btn-sm btn-primary rounded-0">取消</a>
+            </div>
+
+        </form>
+    </div>
+</div>

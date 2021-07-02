@@ -8,7 +8,9 @@
     2-1 要先創建模型 Model/Banner.cs\
     2-2 安裝Nuget套件 [link](https://docs.microsoft.com/zh-tw/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-5.0&tabs=visual-studio-code)\
     2-3 先使用 export PATH=$HOME/.dotnet/tools:$PATH 匯出scaffold 工具路徑\
-    2-4 輸入cmd : dotnet-aspnet-codegenerator controller -name BannerController -m table -dc MvcWebContext--relativeFolderPath Controllers--useDefaultLayout --referenceScriptLibraries， -name 要新建的控制器名稱, -m 你剛剛建立的model.cs檔, -dc 哪個Migration檔名\
+    2-4 輸入cmd : 
+    dotnet-aspnet-codegenerator controller -name MoviesController -m Movie -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+    -name 要新建的控制器名稱, -m 你剛剛建立的model.cs檔, -dc 哪個Migration檔名\
     2-5 輸入 dotnet ef migrations add InitialCreate 與dotnet ef database update 建立轉移紀錄檔與更新資料庫
 
 ---
@@ -19,6 +21,6 @@
 3/25 2021 更新後台可新增、刪除、修改頁籤功能。
 
 ---
-目前寫到首頁最底下，預計是要做成團隊成員的區域，啊要建立一個放團隊成員的table啦，名字、照片、簡介等等...
-
+07/01
+學習 Linq跟vue.js 方法應用於裡面...
 ---

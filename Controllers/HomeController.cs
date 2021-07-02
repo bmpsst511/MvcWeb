@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 
-namespace LMcomposite.Controllers
+namespace MvcWeb.Controllers
 {
     public class HomeController : Controller
     {

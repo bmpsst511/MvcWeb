@@ -1,0 +1,146 @@
+@model IEnumerable<MvcWeb.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3 class="text-center text-uppercase">主圖列表</h3> 
+<p>
+    <a asp-action="Create" class="btn btn-primary rounded-0"><i class="fa fa-plus-circle"></i>新建商品</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                商品圖預覽
+            </th>
+            <th>
+                產品編號
+            </th>
+            <th>
+                產品數量
+            </th>
+            <th>
+                產品價錢
+            </th>
+            <th>
+                產品名稱
+            </th>
+            <th>
+                產品描述
+            </th>
+            <th>
+                產品單位
+            </th>
+            <th>
+                產品位置
+            </th>
+            <th>
+                動作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-asp-route-id = "@item.productId">
+                    <img src="~/Uploads/@item.productPicture" class="img-thumbnail" height="100" width="100" asp-append-version="true"/>
+                </a>
+                <td>@item.productIndex</td>
+                <td>@item.productNumber</td>
+                <td>@item.productPrice</td>
+                <td>@item.productName</td>
+                <td>@item.productDescription</td>
+                <td>@item.productUnit</td>
+                <td>@item.productPosition</td>
+                <td>@item.productPs</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id ="@item.productId" class="btn btn-sm btm-info rounded-0"><i class="fa fa-pencil-alt">編輯</i></a>
+                    <a asp-action="Delete" asp-route-id ="@item.productId" class="btn btn-sm btm-danger rounded-0"><i class="fa fa-trash-alt">刪除</i></a>
+                </td>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<!--
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.productIndex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productUnit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productPosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productPs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productPicture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productPrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.productIndex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productUnit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productPosition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productPs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productPicture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productPrice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.productId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.productId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.productId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+-->
