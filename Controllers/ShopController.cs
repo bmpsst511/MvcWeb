@@ -28,6 +28,7 @@ namespace MvcWeb.Controllers
         public async Task<IActionResult> Index()
         {
             ViewBag.subBoards = dbContext.SubBoard.OrderBy(x => x.Sub_Index).ToList(); //子板照著設定的Index做排列塞入List
+            ViewBag.products = dbContext.Product.ToList();
             var products = await dbContext.Product.ToListAsync();
             return View(products);
         }
