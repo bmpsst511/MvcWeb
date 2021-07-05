@@ -14,12 +14,12 @@ using System.IO;
 
 namespace MvcWeb.Controllers
 {
-    public class BannerController : Controller
+    public class SysBannerController : Controller
     {
         private readonly MvcWebContext _context;
         //圖片功能
         private readonly IWebHostEnvironment webHostEnvironment;
-        public BannerController(MvcWebContext context, IWebHostEnvironment hostEnvironment)
+        public SysBannerController(MvcWebContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
 

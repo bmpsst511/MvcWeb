@@ -14,11 +14,11 @@ using System.IO;
 
 namespace MvcWeb.Controllers
 {
-    public class ProductController : Controller
+    public class SysProductController : Controller
     {
         private readonly MvcWebContext _context;
         private readonly IWebHostEnvironment webHostEnvironment;
-        public ProductController(MvcWebContext context, IWebHostEnvironment hostEnvironment)
+        public SysProductController(MvcWebContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
 

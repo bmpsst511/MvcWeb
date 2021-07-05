@@ -9,11 +9,11 @@ using MvcWeb.Models;
 
 namespace MvcWeb.Controllers
 {
-    public class SubBoardController : Controller
+    public class SysSubBoardController : Controller
     {
         private readonly MvcWebContext _context;
 
-        public SubBoardController(MvcWebContext context)
+        public SysSubBoardController(MvcWebContext context)
         {
             _context = context;
         }
