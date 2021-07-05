@@ -33,9 +33,20 @@ namespace MvcWeb.Controllers
             return View(products);
         }
 
-        public IActionResult Privacy()
+        public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await dbContext.Product
+            .FirstOrDefaultAsync(m => m.productId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return View(product);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

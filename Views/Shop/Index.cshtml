@@ -1,5 +1,4 @@
 @model IEnumerable<MvcWeb.Models.Product>
-
 @{
     ViewData["Title"] = "Shop Page";
     Layout = "~/Views/Shared/shopLayout.cshtml";
@@ -9,7 +8,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +28,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -114,7 +111,7 @@
                             <div class="caption">
                                 <h4 class="pull-right">$@item.productPrice</h4>
                                 <h4><a href="#">@item.productName</a></h4>
-                                <p>庫存：@item.productNumber</p>
+                                <p>庫存：@item.productNumber @item.productUnit</p>
                                 <p>@item.productDescription . 購買連結： <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
                             </div>
                             <div class="ratings">
@@ -139,34 +136,50 @@
     </div>
     <!-- /.container -->
 
-    <div class="container">
+    
 
         <hr>
 
-        <!-- Footer -->
+        <!-- Footer 
         <footer id = "footer">
                 <div class="copyright">
                     <p>{{message}}</p>
                 </div>
         </footer>
+        -->
+        <!-- Footer -->
+        <footer id="footer" class="html">
+            <div class="container">
+                <ul class="icons">
+                    @*<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>*@
+                    <li><a href="https://www.facebook.com/有溫度科技TemperTech-106585560952178" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://localhost:5001/Contact/index" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                {{ message }}<!-- message 接vue.js送來的資料-->
+                @*Copyright &copy; 李仁敦那誒家煙斗*@
+            </div>
+        </footer>
 
-    </div>
+    
     <!-- /.container -->
 
     <!-- jQuery Version 1.11.0 -->
     <script src="~/shop/js/jquery-1.11.0.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="~/shop/js/bootstrap.min.js"></script>
+
     <!--使用Vue.js 修改 footer 資料-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
-    var footer = new Vue({
-    el: '#footer',
-    data: {
-        message: 'Copyright © ' + new Date().toDateString() + '  Temper Inc. 著作權所有，並保留一切權利。'
-    }
-    })
+        var footer = new Vue({
+        el: '#footer',
+        data: {
+            message: 'Copyright © ' + new Date().toDateString() + '  Temper Inc. 著作權所有，並保留一切權利。'
+        }
+        })
     </script>
 </body>
 

@@ -221,3 +221,4 @@
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Banner/Index.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Shop/Index.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Shared/shopLayout.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Shop/Details.cshtml.g.cs

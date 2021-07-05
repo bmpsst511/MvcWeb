@@ -14,39 +14,39 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="productId" />
             <div class="form-group">
-                <label asp-for="productIndex" class="control-label"></label>
+                <label asp-for="productIndex" class="control-label">商品編號</label>
                 <input asp-for="productIndex" class="form-control" />
                 <span asp-validation-for="productIndex" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="productNumber" class="control-label"></label>
+                <label asp-for="productNumber" class="control-label">商品數量</label>
                 <input asp-for="productNumber" class="form-control" />
                 <span asp-validation-for="productNumber" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="productPrice" class="control-label"></label>
+                <label asp-for="productPrice" class="control-label">商品價格</label>
                 <input asp-for="productPrice" class="form-control" />
                 <span asp-validation-for="productPrice" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="productName" class="control-label"></label>
+                <label asp-for="productName" class="control-label">商品名稱</label>
                 <input asp-for="productName" class="form-control" />
                 <span asp-validation-for="productName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="productDescription" class="control-label"></label>
+                <label asp-for="productDescription" class="control-label">商品描述</label>
                 <input asp-for="productDescription" class="form-control" />
                 <span asp-validation-for="productDescription" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="productUnit" class="control-label"></label>
+                <label asp-for="productUnit" class="control-label">商品單位</label>
                 <input asp-for="productUnit" class="form-control" />
                 <span asp-validation-for="productUnit" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="productPosition" class="control-label"></label>
+                <label asp-for="productPosition" class="control-label">商品位置</label>
                 <input asp-for="productPosition" class="form-control" />
                 <span asp-validation-for="productPosition" class="text-danger"></span>
             </div>
@@ -73,7 +73,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">返回列表</a>
 </div>
 
 @section Scripts {
