@@ -21,14 +21,18 @@
 3/25 2021 更新後台可新增、刪除、修改頁籤功能。
 
 ---
-07/01
+07/01 2021
 學習 Linq跟vue.js 方法應用於裡面...
 
 ---
-07/03 新增功能:後台的商品能夠上架與編輯
+07/03 2021
+新增功能:後台的商品能夠上架與編輯
 在 Edit.cshtml：
 原本："form asp-action="Edit""
 修正："form asp-action="Edit" method="post" enctype="multipart/form-data"> 才能重新編輯圖片"
 預計作業：後台的商品能在前台顯示。 /Shop/Index.cshtml
 
 ---
+07/06 2021
+1. 商品已可於前台顯示
+2. footer排版修正
