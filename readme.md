@@ -39,3 +39,8 @@
 3. 新增關於我們頁面(尚未建立對應的db model), 預計執行
 
 ---
+07/07 2021
+1. 建立關於我頁面中，成員的model(Employ.cs)
+2. 目前成員後台功能只完成 Index部分，預計將 Create, Edit, Delete功能頁面完成。
+3. 昨天搞的商城頁面很爛，預計使用 "https://startbootstrap.com/template/shop-homepage"來更改排版。
+---

@@ -224,3 +224,8 @@
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysSubBoard/Edit.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysSubBoard/Index.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/Shared/AboutUsLayout.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Create.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Delete.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Details.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Edit.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Index.cshtml.g.cs

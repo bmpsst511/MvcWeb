@@ -1,0 +1,120 @@
+@model IEnumerable<MvcWeb.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h3 class="text-center text-uppercase">成員列表</h3> 
+<p>
+    <a asp-action="Create" class="btn btn-primary rounded-0"><i class="fa fa-plus-circle"></i>新建成員</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                成員照片
+            </th>
+            <th>
+                成員編號
+            </th>
+            <th>
+                成員名稱
+            </th>
+            <th>
+                成員簡介
+            </th>
+            <th>
+                成員學歷
+            </th>
+            <th>
+                成員生日
+            </th>
+            <th>
+                動作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-action="Details" asp-asp-route-id = "@item.employeeId">
+                    <img src="~/Uploads/@item.employeePicture" class="img-thumbnail" height="100" width="100" asp-append-version="true"/>
+                </a>
+                <td>@item.employeeIndex</td>
+                <td>@item.employeerName</td>
+                <td>@item.employeeIntro</td>
+                <td>@item.employeeDegree</td>
+                <td>@item.employeeBirth</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id ="@item.employeeId" class="btn btn-sm btm-info rounded-0"><i class="fa fa-pencil-alt">編輯</i></a>
+                    <a asp-action="Delete" asp-route-id ="@item.employeeId" class="btn btn-sm btm-danger rounded-0"><i class="fa fa-trash-alt">刪除</i></a>
+                </td>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<!--
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeIndex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employeerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeIntro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeDegree)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employeeBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employeePicture)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeeIndex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeeIntro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeeDegree)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeeBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employeePicture)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.employeeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.employeeId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.employeeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+-->
