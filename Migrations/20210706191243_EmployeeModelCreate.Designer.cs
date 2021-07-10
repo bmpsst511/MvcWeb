@@ -64,7 +64,7 @@ namespace MvcWeb.Migrations
                     b.Property<string>("employeePicture")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("employeerName")
+                    b.Property<string>("employeeName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

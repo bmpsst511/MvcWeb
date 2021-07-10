@@ -43,7 +43,7 @@
                     <img src="~/Uploads/@item.employeePicture" class="img-thumbnail" height="100" width="100" asp-append-version="true"/>
                 </a>
                 <td>@item.employeeIndex</td>
-                <td>@item.employeerName</td>
+                <td>@item.employeeName</td>
                 <td>@item.employeeIntro</td>
                 <td>@item.employeeDegree</td>
                 <td>@item.employeeBirth.ToString("yyyy-MM-dd")</td>
@@ -70,7 +70,7 @@
                 @Html.DisplayNameFor(model => model.employeeIndex)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.employeerName)
+                @Html.DisplayNameFor(model => model.employeeName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.employeeIntro)
@@ -94,7 +94,7 @@
                 @Html.DisplayFor(modelItem => item.employeeIndex)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.employeerName)
+                @Html.DisplayFor(modelItem => item.employeeName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.employeeIntro)

@@ -14,7 +14,7 @@ namespace MvcWeb.Migrations
                     employeeId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     employeeIndex = table.Column<int>(type: "INTEGER", nullable: false),
-                    employeerName = table.Column<string>(type: "TEXT", nullable: false),
+                    employeeName = table.Column<string>(type: "TEXT", nullable: false),
                     employeeIntro = table.Column<string>(type: "TEXT", nullable: true),
                     employeeDegree = table.Column<string>(type: "TEXT", nullable: true),
                     employeeBirth = table.Column<DateTime>(type: "TEXT", nullable: false),

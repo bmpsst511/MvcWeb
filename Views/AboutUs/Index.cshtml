@@ -71,59 +71,19 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    @foreach (var item in ViewBag.employeeInfo)
+                    {
+                        string portfolioIndex = "portfolioModal" + Convert.ToString(@item.employeeIndex);
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#@portfolioIndex">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                @*<img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/cabin.png" alt="..." />*@
+                                <img class="img-fluid" src="~/Uploads/@item.employeePicture" alt="..." />
                             </div>
-                            <img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/cabin.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/cake.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/circus.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/game.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="~/AboutUsPage/assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div>
+                        </div>   
+                    }
                 </div>
             </div>
         </section>
@@ -140,8 +100,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">我們是一群有夢想的年輕人成立的團隊，每位成員均來自不同的領域。</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">致力於打造有溫度的科技，幫助社會弱勢族群同樣能擁有科技所帶來改變的力量!</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -231,9 +191,9 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            台灣 台北市
                             <br />
-                            Clark, MO 65243
+                            大安區, 羅斯福路 No.xx-xxx
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -246,213 +206,60 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">About TemperTech Inc</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                            TemperTech is an company founded by
+                            Lee and Chiang.
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
+        <div class="copyright py-4 text-center text-white" id = "footer">
+            <div class="container">{{ message }}</div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">成員-1</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
+        @foreach (var item in ViewBag.employeeInfo)
+        {
+            string portfolioIndex = "portfolioModal" + Convert.ToString(@item.employeeIndex);
+            <div class="portfolio-modal modal fade" id="@portfolioIndex" tabindex="-1" aria-labelledby="@portfolioIndex" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                        <div class="modal-body text-center pb-5">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <!-- Portfolio Modal - Title-->
+                                        @*<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">成員-1</h2>*@
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">@item.employeeName</h2>
+                                        <!-- Icon Divider-->
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <!-- Portfolio Modal - Image-->
+                                        @*<img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/cabin.png" alt="..." />*@
+                                        <img class="img-fluid rounded mb-5" src="~/Uploads/@item.employeePicture" alt="..." />
+                                        <!-- Portfolio Modal - Text-->
+                                        @*<p class="mb-4">於2xxx/0x/2x，畢業於XXX大學，主修xxxx，曾任職於xxxx，帶領過xxxx，開發出xxxx，拿到xxx,xxx,xxx等殊榮。</p>*@
+                                        <p class="mb-4">@item.employeeIntro</p>
+                                        <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                            <i class="fas fa-times fa-fw"></i>
+                                            關閉視窗
+                                        </button>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">於2xxx/0x/2x，畢業於XXX大學，主修xxxx，曾任職於xxxx，帶領過xxxx，開發出xxxx，拿到xxx,xxx,xxx等殊榮。</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">成員-2</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">於2xxx/0x/2x，畢業於XXX大學，主修xxxx，曾任職於xxxx，帶領過xxxx，開發出xxxx，拿到xxx,xxx,xxx等殊榮。</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">成員3</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">於2xxx/0x/2x，畢業於XXX大學，主修xxxx，曾任職於xxxx，帶領過xxxx，開發出xxxx，拿到xxx,xxx,xxx等殊榮。.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="~/AboutUsPage/assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        }
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -462,5 +269,18 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!--使用Vue.js 修改 footer 資料-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script>
+        var footer = new Vue({
+        el: '#footer',
+        data: {
+            message: 'Copyright © ' + new Date().toDateString() + '  Temper Inc. 著作權所有，並保留一切權利。'
+        }
+        })
+        </script>
     </body>
 </html>
+
+

@@ -47,7 +47,7 @@ namespace MvcWeb.Controllers
             {
                 employeeId = employee.employeeId,
                 employeeIndex = employee.employeeIndex,
-                employeerName = employee.employeerName,
+                employeeName = employee.employeeName,
                 employeeIntro = employee.employeeIntro,
                 employeeDegree = employee.employeeDegree,
                 employeeBirth = employee.employeeBirth,
@@ -82,7 +82,7 @@ namespace MvcWeb.Controllers
                 Employee employee = new Employee
                 {
                     employeeIndex = model.employeeIndex,
-                    employeerName = model.employeerName,
+                    employeeName = model.employeeName,
                     employeeIntro = model.employeeIntro,
                     employeeDegree = model.employeeDegree,
                     employeeBirth = model.employeeBirth,
@@ -112,7 +112,7 @@ namespace MvcWeb.Controllers
             {
                 employeeId = employee.employeeId,
                 employeeIndex = employee.employeeIndex,
-                employeerName = employee.employeerName,
+                employeeName = employee.employeeName,
                 employeeIntro = employee.employeeIntro,
                 employeeDegree = employee.employeeDegree,
                 employeeBirth = employee.employeeBirth,
@@ -144,7 +144,7 @@ namespace MvcWeb.Controllers
             {
                 var employee = await _context.Employee.FindAsync(model.employeeId);
                 employee.employeeIndex = model.employeeIndex;
-                employee.employeerName = model.employeerName;
+                employee.employeeName = model.employeeName;
                 employee.employeeIntro = model.employeeIntro;
                 employee.employeeDegree = model.employeeDegree;
                 employee.employeeBirth = model.employeeBirth;
@@ -181,7 +181,7 @@ namespace MvcWeb.Controllers
             {
                 employeeId = employee.employeeId,
                 employeeIndex = employee.employeeIndex,
-                employeerName = employee.employeerName,
+                employeeName = employee.employeeName,
                 employeeIntro = employee.employeeIntro,
                 employeeDegree = employee.employeeDegree,
                 employeeBirth = employee.employeeBirth,
