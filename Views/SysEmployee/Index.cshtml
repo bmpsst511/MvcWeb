@@ -46,7 +46,7 @@
                 <td>@item.employeerName</td>
                 <td>@item.employeeIntro</td>
                 <td>@item.employeeDegree</td>
-                <td>@item.employeeBirth</td>
+                <td>@item.employeeBirth.ToString("yyyy-MM-dd")</td>
                 <td>
                     <a asp-action="Edit" asp-route-id ="@item.employeeId" class="btn btn-sm btm-info rounded-0"><i class="fa fa-pencil-alt">編輯</i></a>
                     <a asp-action="Delete" asp-route-id ="@item.employeeId" class="btn btn-sm btm-danger rounded-0"><i class="fa fa-trash-alt">刪除</i></a>

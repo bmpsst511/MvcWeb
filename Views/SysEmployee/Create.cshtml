@@ -1,58 +1,94 @@
-@model MvcWeb.Models.Employee
-
+@*@model MvcWeb.Models.Employee*@
+@model MvcWeb.ViewModels.employeeViewModel
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>Employee</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="employeeIndex" class="control-label"></label>
-                <input asp-for="employeeIndex" class="form-control" />
-                <span asp-validation-for="employeeIndex" class="text-danger"></span>
+<div class="card">
+    <div class="card-header">
+        <h3 class="text-uppercase">新建成員</h3>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="employeeIndex" class="control-label">成員編號</label>
+                        <input asp-for="employeeIndex" class="form-control" />
+                        <span asp-validation-for="employeeIndex" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="employeeImage" class="control-label">上傳圖片</label>
+                        <div class="custom-file">
+                            <input asp-for="employeeImage" class="custom-file-input" />
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <span asp-validation-for="employeeImage" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="employeerName" class="control-label"></label>
-                <input asp-for="employeerName" class="form-control" />
-                <span asp-validation-for="employeerName" class="text-danger"></span>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="employeerName" class="control-label">成員名稱</label>
+                        <input asp-for="employeerName" class="form-control" />
+                        <span asp-validation-for="employeerName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="employeeIntro" class="control-label">成員簡介</label>
+                        <input asp-for="employeeIntro" class="form-control" />
+                        <span asp-validation-for="employeeIntro" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="employeeIntro" class="control-label"></label>
-                <input asp-for="employeeIntro" class="form-control" />
-                <span asp-validation-for="employeeIntro" class="text-danger"></span>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="employeeDegree" class="control-label">成員學歷</label>
+                        <input asp-for="employeeDegree" class="form-control" />
+                        <span asp-validation-for="employeeDegree" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="employeeBirth" class="control-label">成員生日</label>
+                        <input asp-for="employeeBirth" id="datepicker" type="text" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <span asp-validation-for="employeeBirth" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
+
             <div class="form-group">
-                <label asp-for="employeeDegree" class="control-label"></label>
-                <input asp-for="employeeDegree" class="form-control" />
-                <span asp-validation-for="employeeDegree" class="text-danger"></span>
+                <input type="submit" value="創建" class="btn btn-sm btn-primary rounded-0" />
+                <a asp-action="Index" class="btn btn-sm btn-primary rounded-0">取消</a>
             </div>
-            <div class="form-group">
-                <label asp-for="employeeBirth" class="control-label"></label>
-                <input asp-for="employeeBirth" class="form-control" />
-                <span asp-validation-for="employeeBirth" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="employeePicture" class="control-label"></label>
-                <input asp-for="employeePicture" class="form-control" />
-                <span asp-validation-for="employeePicture" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
+    <script>// Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+    </script>
+
+    <!--呼叫日曆功能-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $('#datepicker').datepicker();
+        });
+    </script>
+    <!--呼叫日曆功能-->
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

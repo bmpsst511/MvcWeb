@@ -17,6 +17,7 @@ namespace MvcWeb.ViewModels
         public string employeerName {get; set;}//成員名稱
         public string employeeIntro {get; set;}//成員簡介
         public string employeeDegree {get; set;}//成員學歷
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd}")]
         public DateTime employeeBirth {get; set;}//成員生日
 
         [Display(Name = "Profile Picture")]

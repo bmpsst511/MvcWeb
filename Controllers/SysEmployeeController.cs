@@ -124,6 +124,7 @@ namespace MvcWeb.Controllers
             {
                 return NotFound();
             }
+            ViewBag.employeeInfo = _context.Employee.Where(x => x.employeeId == id).ToList(); // for sysemployee/ edit view
             return View(EmployeeViewModel);
         }
 

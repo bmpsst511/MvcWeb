@@ -44,3 +44,10 @@
 2. 目前成員後台功能只完成 Index部分，預計將 Create, Edit, Delete功能頁面完成。
 3. 昨天搞的商城頁面很爛，預計使用 "https://startbootstrap.com/template/shop-homepage" & "https://github.com/StartBootstrap/startbootstrap-shop-item" 來更改排版。
 ---
+07/10 2021
+1. 目前只建完 create部分，愛睏啊。 (2:00 am)
+2. 在 sysemployee/edit.cshtml 增加日曆選取功能。
+3. sysemployee/edit.cshtml 顯示舊有的生日日期與圖片名稱。
+4. sysemployee/create.cshtml 新增日曆選取功能。 
+
+---
