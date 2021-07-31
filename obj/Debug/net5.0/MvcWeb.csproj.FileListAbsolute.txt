@@ -47,7 +47,6 @@
 /Users/leejentun/dev/MVCPractice/MvcWeb/bin/Debug/net5.0/MvcWeb.pdb
 /Users/leejentun/dev/MVCPractice/MvcWeb/bin/Debug/net5.0/MvcWeb.Views.dll
 /Users/leejentun/dev/MVCPractice/MvcWeb/bin/Debug/net5.0/MvcWeb.Views.pdb
-/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/MvcWeb.csprojAssemblyReference.cache
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/MvcWeb.GeneratedMSBuildEditorConfig.editorconfig
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/MvcWeb.AssemblyInfoInputs.cache
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/MvcWeb.AssemblyInfo.cs
@@ -229,3 +228,4 @@
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Details.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Edit.cshtml.g.cs
 /Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/Razor/Views/SysEmployee/Index.cshtml.g.cs
+/Users/leejentun/dev/MVCPractice/MvcWeb/obj/Debug/net5.0/MvcWeb.csproj.AssemblyReference.cache
