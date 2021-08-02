@@ -15634,6 +15634,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysProduct/Details.cshtml",
       "TargetPath": "Views\\SysProduct\\Details.cshtml",
       "FileKind": "mvc"
@@ -15646,6 +15651,11 @@
     {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysEmployee/Details.cshtml",
       "TargetPath": "Views\\SysEmployee\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15666,6 +15676,11 @@
     {
       "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysSubBoard/Edit.cshtml",
       "TargetPath": "Views\\SysSubBoard\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {

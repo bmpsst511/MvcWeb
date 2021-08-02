@@ -53,3 +53,28 @@
 ---
 07/11 2021
 1. AboutUs頁面，團隊成員可以從後台新增刪除修改，且照片，敘述等內容顯示正常。
+
+---
+
+08/02
+預計導入會員註冊登入功能
+
+---
+
+08/02
+已初步導入會員註冊登入功能
+
+參考此網址：https://docs.microsoft.com/zh-tw/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-5.0&tabs=netcore-cli
+
+1. 因本專案使用sqlite，因此在導入 "dotnet add package Microsoft.EntityFrameworkCore.SqlServer" 需改成 "dotnet add package Microsoft.EntityFrameworkCore.Sqlite"
+
+2. 執行 "dotnet aspnet-codegenerator identity --useDefaultUI" 會生成 Areas/Identity
+
+3. 修改"IdentityHostingStartup.cs"檔裡面的 "options.UseSqlserver" 至 "options.UseSqlite"
+
+4. 執行 "dotnet ef migrations add CreateIdentitySchema --context MvcWebIdentityDbContext" 與 "dotnet ef database update --context MvcWebIdentityDbContext"
+
+5. 再依照參考網址裡修改"Startup.cs" 部分參數即可擁有 .net core 的註冊登入驗證功能頁面。
+
+---
+

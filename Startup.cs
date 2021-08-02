@@ -27,6 +27,7 @@ namespace MvcWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages();//Identity
 
             services.AddDbContext<MvcWebContext>(options =>
             {
@@ -49,6 +50,7 @@ namespace MvcWeb
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //app.UseDatabaseErrorPage();
             }
             else
             {
@@ -62,12 +64,14 @@ namespace MvcWeb
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthorization();// Identity
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();// Identity
             });
         }
     }
