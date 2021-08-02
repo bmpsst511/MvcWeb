@@ -64,7 +64,7 @@ namespace MvcWeb
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseAuthorization();// Identity
+            app.UseAuthentication();// Identity
 
             app.UseEndpoints(endpoints =>
             {
