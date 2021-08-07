@@ -84,6 +84,7 @@
 參考這個 Link: https://stackoverflow.com/questions/59818745/how-to-customize-the-login-page-of-asp-net-core-web-application-with-angular-ind
 
 測試帳號: test@test.com
-password: Test1234!
+password: Test1234! (包含驚嘆號)
+
 ---
 
