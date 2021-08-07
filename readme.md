@@ -61,7 +61,7 @@
 
 ---
 
-08/02
+08/02 2021
 已初步導入會員註冊登入功能
 
 參考此網址：https://docs.microsoft.com/zh-tw/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-5.0&tabs=netcore-cli
@@ -76,5 +76,14 @@
 
 5. 再依照參考網址裡修改"Startup.cs" 部分參數即可擁有 .net core 的註冊登入驗證功能頁面。
 
+---
+
+0807 2021\
+承接上次，導入登入註冊頁面後，還需執行 "dotnet aspnet-codegenerator identity -dc ProjectName.Data.ApplicationDbContext --files "Account.Register;Account.Login" 就會生成 Login.cshtml & Register.cshtml 頁面可以客製化。
+
+參考這個 Link: https://stackoverflow.com/questions/59818745/how-to-customize-the-login-page-of-asp-net-core-web-application-with-angular-ind
+
+測試帳號: test@test.com
+password: Test1234!
 ---
 
