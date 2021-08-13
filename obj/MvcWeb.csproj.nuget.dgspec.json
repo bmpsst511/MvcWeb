@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj": {}
+    "/Users/leejentun/dev/MvcWeb/MvcWeb.csproj": {}
   },
   "projects": {
-    "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj": {
+    "/Users/leejentun/dev/MvcWeb/MvcWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj",
+        "projectUniqueName": "/Users/leejentun/dev/MvcWeb/MvcWeb.csproj",
         "projectName": "MvcWeb",
-        "projectPath": "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj",
+        "projectPath": "/Users/leejentun/dev/MvcWeb/MvcWeb.csproj",
         "packagesPath": "/Users/leejentun/.nuget/packages/",
-        "outputPath": "/Users/leejentun/dev/MVCPractice/MvcWeb/obj/",
+        "outputPath": "/Users/leejentun/dev/MvcWeb/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/leejentun/.nuget/NuGet/NuGet.Config"

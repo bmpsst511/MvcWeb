@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj",
+  "FilePath": "/Users/leejentun/dev/MvcWeb/MvcWeb.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,208 +15619,208 @@
   "RootNamespace": "MvcWeb",
   "Documents": [
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysEmployee/Edit.cshtml",
-      "TargetPath": "Views\\SysEmployee\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/shopLayout.cshtml",
-      "TargetPath": "Views\\Shared\\shopLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysSubBoard/Details.cshtml",
-      "TargetPath": "Views\\SysSubBoard\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysProduct/Details.cshtml",
-      "TargetPath": "Views\\SysProduct\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysProduct/Delete.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysProduct/Delete.cshtml",
       "TargetPath": "Views\\SysProduct\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysEmployee/Details.cshtml",
-      "TargetPath": "Views\\SysEmployee\\Details.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysSubBoard/Details.cshtml",
+      "TargetPath": "Views\\SysSubBoard\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysEmployee/Delete.cshtml",
-      "TargetPath": "Views\\SysEmployee\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shop/Details.cshtml",
-      "TargetPath": "Views\\Shop\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Home/Index.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/Account/Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysEmployee/Details.cshtml",
+      "TargetPath": "Views\\SysEmployee\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysSubBoard/Edit.cshtml",
-      "TargetPath": "Views\\SysSubBoard\\Edit.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Areas/Identity/Pages/_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysBanner/Details.cshtml",
-      "TargetPath": "Views\\SysBanner\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysSubBoard/Create.cshtml",
-      "TargetPath": "Views\\SysSubBoard\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysSubBoard/Delete.cshtml",
-      "TargetPath": "Views\\SysSubBoard\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysBanner/Edit.cshtml",
-      "TargetPath": "Views\\SysBanner\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysProduct/Create.cshtml",
-      "TargetPath": "Views\\SysProduct\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/Error.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shop/Index.cshtml",
-      "TargetPath": "Views\\Shop\\Index.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shop/Details.cshtml",
+      "TargetPath": "Views\\Shop\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysBanner/Create.cshtml",
-      "TargetPath": "Views\\SysBanner\\Create.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysProduct/Details.cshtml",
+      "TargetPath": "Views\\SysProduct\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysEmployee/Index.cshtml",
-      "TargetPath": "Views\\SysEmployee\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysBanner/Index.cshtml",
-      "TargetPath": "Views\\SysBanner\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysEmployee/Create.cshtml",
-      "TargetPath": "Views\\SysEmployee\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/AboutUsLayout.cshtml",
-      "TargetPath": "Views\\Shared\\AboutUsLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysProduct/Index.cshtml",
-      "TargetPath": "Views\\SysProduct\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/_ViewImports.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Areas/Identity/Pages/_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/_LoginLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginLayout.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysEmployee/Edit.cshtml",
+      "TargetPath": "Views\\SysEmployee\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Areas/Identity/Pages/Account/Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/Shared/Hielo.cshtml",
-      "TargetPath": "Views\\Shared\\Hielo.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/AboutUs/Index.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/AboutUs/Index.cshtml",
       "TargetPath": "Views\\AboutUs\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysSubBoard/Index.cshtml",
-      "TargetPath": "Views\\SysSubBoard\\Index.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysBanner/Index.cshtml",
+      "TargetPath": "Views\\SysBanner\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysProduct/Edit.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/_LoginLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysEmployee/Create.cshtml",
+      "TargetPath": "Views\\SysEmployee\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysSubBoard/Edit.cshtml",
+      "TargetPath": "Views\\SysSubBoard\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shop/Index.cshtml",
+      "TargetPath": "Views\\Shop\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysBanner/Edit.cshtml",
+      "TargetPath": "Views\\SysBanner\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysEmployee/Index.cshtml",
+      "TargetPath": "Views\\SysEmployee\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysBanner/Delete.cshtml",
+      "TargetPath": "Views\\SysBanner\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysBanner/Create.cshtml",
+      "TargetPath": "Views\\SysBanner\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Areas/Identity/Pages/Account/Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/Hielo.cshtml",
+      "TargetPath": "Views\\Shared\\Hielo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysProduct/Edit.cshtml",
       "TargetPath": "Views\\SysProduct\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/leejentun/dev/MVCPractice/MvcWeb/Views/SysBanner/Delete.cshtml",
-      "TargetPath": "Views\\SysBanner\\Delete.cshtml",
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysProduct/Create.cshtml",
+      "TargetPath": "Views\\SysProduct\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysSubBoard/Delete.cshtml",
+      "TargetPath": "Views\\SysSubBoard\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysEmployee/Delete.cshtml",
+      "TargetPath": "Views\\SysEmployee\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/shopLayout.cshtml",
+      "TargetPath": "Views\\Shared\\shopLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysSubBoard/Create.cshtml",
+      "TargetPath": "Views\\SysSubBoard\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysProduct/Index.cshtml",
+      "TargetPath": "Views\\SysProduct\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysBanner/Details.cshtml",
+      "TargetPath": "Views\\SysBanner\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/SysSubBoard/Index.cshtml",
+      "TargetPath": "Views\\SysSubBoard\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Views/Shared/AboutUsLayout.cshtml",
+      "TargetPath": "Views\\Shared\\AboutUsLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/leejentun/dev/MvcWeb/Areas/Identity/Pages/Account/Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
     }
   ],

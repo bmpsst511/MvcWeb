@@ -29,6 +29,7 @@
                 </div>
             </div>
             <input type="submit" value="Login">
+            <button class="cancelButton" onclick='goBack()'>Cancel</button>
             <div class="signup_link">
                 <p>
                     <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
@@ -78,3 +79,8 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+<script type='text/javascript'>
+function goBack() {
+    window.history.back();
+}
+</script>

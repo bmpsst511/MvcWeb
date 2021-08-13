@@ -26,6 +26,8 @@
         </div>
         @*<button type="submit" class="btn btn-primary">Register</button>*@
         <input type="submit" value="Register">
+        <!--cancel button-->
+        <button class="cancelButton" onclick='goBack()'>Cancel</button>
         <div class="signup_link"></div>
     </form>
 </div>
@@ -65,3 +67,9 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<script type='text/javascript'>
+function goBack() {
+    window.history.back();
+}
+</script>
