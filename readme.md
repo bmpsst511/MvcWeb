@@ -108,3 +108,8 @@ password: Test1234! (包含驚嘆號)
 在新電腦 clone 完之後，如果遇到通常會遇到 .net core 版本過低 或者 coreclr 不支援。 可透過安裝新的 "brew install --cask dotnet-sdk" 跟 vscode 裡安裝 C# 套件 (coreclr不支援的解決方法)
 
 ---
+
+0816 2021\
+新增 News.html and News.css 正在切新創資源網頁的版面，目前導覽列RWD完成。
+
+---
