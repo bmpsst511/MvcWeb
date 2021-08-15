@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- import bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="NewsStyle.css">
+        <!-- import bootstrap-->
+        <meta charset="utf-8">
+        <title>News Platform</title>
+        <!--<link rel="stylesheet" href="LoginStyle.css">-->
+    </head>
+    <header>
+        <div class="headerGroup">
+            <div class="navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand visible-xs-block text-center" style="float: none;" href="https://www.tnlmedia.com/">
+                        <img class="logo-group group-light" src="NewsLogo.svg" alt="TNL Media Group Logo">
+                        </a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-center">
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">關於我們<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">平台介紹</a></li>
+                                        <li><a href="#">團隊成員</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">周邊科技<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">有溫度科技</a></li>
+                                        <li><a href="#">子集團一</a></li>
+                                        <li><a href="#">子集團二</a></li>
+                                        <li><a href="#">子集團三</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">多元服務<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu-position"><a href="#">程式開發</a></li>
+                                        <li><a href="#">虛擬實境</a></li>
+                                        <li><a href="#">論文校稿</a></li>
+                                        <li><a href="#">網站開發</a></li>
+                                        <li><a href="#">跨國合作</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="header-group-item header-group-item-logo">
+                                    <a class="logo-group-link" target="_blank" rel="noopener noreferrer" href="https://www.tnlmedia.com/">
+                                    <img class="logo-group group-light" src="NewsLogo.svg" alt="TNL Media Group Logo">
+                                    </a>
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">與我們合作<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">新創加速器</a></li>
+                                        <li><a href="#">VR互動科技</a></li>
+                                        <li><a href="#">VR線上策展</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">加入我們</a></li>
+                                <li><a href="#">新聞中心</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <body>
+            
+            
+        </body>
+</html>
+
+<script>
+    // calculating margin-left to align it to center;
+    var width = $('.justified').width();
+    $('.justified').css('margin-left', '-' + (width / 2)+'px');
+
+    $('.dropdown').on('shown.bs.dropdown', function(e) {
+        $(this).find('.caret').toggleClass('rotate-180');
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    $('.dropdown').on('hidden.bs.dropdown', function(e) {
+        $(this).find('.caret').toggleClass('rotate-180');
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(0);
+    });
+</script>
+

@@ -1,0 +1,82 @@
+body{
+    background: #f7f7f7;
+}
+.nav a {
+    color: inherit; /* 移除超連結顏色 */
+    text-decoration: none;  /* 移除超連結底線 */
+}
+
+.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.headerGroup{
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/**** RWD nav bar ***/
+@media (max-width: 991px) {
+    .header-group-item-logo{
+        display: none !important
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: black;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+/**** RWD nav bar ***/
+
+.caret {
+    -moz-transition: transform .5s;
+    -webkit-transition: transform .5s;
+    transition: transform .5s;
+}
+
+.rotate-180 {
+    transform: rotate(-180deg);
+}
+
+.dropdown .dropdown-menu {
+    overflow: hidden;
+    display: none;
+    text-align:center
+}
+

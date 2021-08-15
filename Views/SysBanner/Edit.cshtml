@@ -33,11 +33,19 @@
                 <input asp-for="bannerContentDown" class="form-control" />
                 <span asp-validation-for="bannerContentDown" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="ProfilePicture" class="control-label"></label>
-                <input asp-for="ProfilePicture" class="form-control" />
-                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+                <label asp-for="ProfileImage" class="control-label">上傳圖片</label>
+                <div class="custom-file">
+                    <input asp-for="ProfileImage" class="custom-file-input" />
+                    @foreach (var Img in ViewBag.bannerInfo)
+                    {
+                        <label class="custom-file-label" for="customFile">@Img.ProfilePicture</label>//顯示原本的圖片名稱
+                    }
+                </div>
+                <span asp-validation-for="ProfileImage" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

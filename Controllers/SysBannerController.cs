@@ -117,6 +117,7 @@ namespace MvcWeb.Controllers
             {
                 return NotFound();
             }
+            ViewBag.bannerInfo = _context.Banner.Where(x => x.Id == id).ToList(); // for sysemployee/ edit view
             return View(BannerViewModel);
         }
 
