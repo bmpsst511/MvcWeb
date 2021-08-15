@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lee/Dev/githubFiles/MvcWeb/MvcWeb.csproj": {}
+    "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj": {}
   },
   "projects": {
-    "/Users/lee/Dev/githubFiles/MvcWeb/MvcWeb.csproj": {
+    "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lee/Dev/githubFiles/MvcWeb/MvcWeb.csproj",
+        "projectUniqueName": "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj",
         "projectName": "MvcWeb",
-        "projectPath": "/Users/lee/Dev/githubFiles/MvcWeb/MvcWeb.csproj",
-        "packagesPath": "/Users/lee/.nuget/packages/",
-        "outputPath": "/Users/lee/Dev/githubFiles/MvcWeb/obj/",
+        "projectPath": "/Users/leejentun/dev/MVCPractice/MvcWeb/MvcWeb.csproj",
+        "packagesPath": "/Users/leejentun/.nuget/packages/",
+        "outputPath": "/Users/leejentun/dev/MVCPractice/MvcWeb/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lee/.nuget/NuGet/NuGet.Config"
+          "/Users/leejentun/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }
