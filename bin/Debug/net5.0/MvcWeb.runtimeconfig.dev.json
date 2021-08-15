@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/leejentun/.dotnet/store/|arch|/|tfm|",
-      "/Users/leejentun/.nuget/packages"
+      "/Users/lee/.dotnet/store/|arch|/|tfm|",
+      "/Users/lee/.nuget/packages"
     ]
   }
 }
