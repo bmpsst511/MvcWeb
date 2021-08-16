@@ -1,6 +1,4 @@
-body{
-    background: #f7f7f7;
-}
+
 .nav a {
     color: inherit; /* 移除超連結顏色 */
     text-decoration: none;  /* 移除超連結底線 */
@@ -16,11 +14,30 @@ body{
     background-color: #fff;
 }
 
-ul {
-    list-style: none;
+hr{
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction:row;
 
+    /*flex-wrap: wrap;*/
+    /* 修改以下值試試看 flex-start | flex-end | center | space-between | space-around;
+    justify-content: center; */
+    
+    /* 修改以下值試試看 flex-start | flex-end | center | space-between | space-around | stretch
+    align-content: flex-start;*/
+}
+
+.searchbar {
+    display: flex;
+    float: right;
+    align-items: center;
+    margin: 10px 10px;
+    margin-left: auto;
+}
 
 /**** RWD nav bar ***/
 @media (max-width: 991px) {
@@ -60,6 +77,9 @@ ul {
     }
     .collapsing {
         overflow: hidden!important;
+    }
+    .searchbar{
+        display: none;
     }
 }
 /**** RWD nav bar ***/
