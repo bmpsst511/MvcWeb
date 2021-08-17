@@ -113,3 +113,8 @@ password: Test1234! (包含驚嘆號)
 新增 News.html and News.css 正在切新創資源網頁的版面，目前導覽列RWD完成。
 
 ---
+
+0817 2021\
+News.html nav bar 部分切版完，但需增加 css 與 js 功能。
+
+---
