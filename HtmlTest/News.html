@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- import bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="NewsStyle.css?<?=filemtime('NewsStyle.css');?>">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="application/json" id="tnl_info">{"video":{"tags":["\u53f0\u5927\u98a8\u96aa\u4e2d\u5fc3","COVID19","\u74b0\u5883\u6539\u5584","\u90a3\u4e9b\u75ab\u60c5\u6539\u8b8a\u7684\u4e8b","\u65b0\u51a0\u80ba\u708e","\u79d1\u6280\u90e8","\u6c23\u5019\u8b8a\u9077","\u7da0\u8272\u632f\u8208"],"author_name":"\u5ee3\u7de8\u4f01\u5283","main_category":"\u74b0\u5883","published_unix_timestamp":1611569532000}}</script>
+        <!-- import bootstrap-->
+        <meta charset="utf-8">
+        <title>News Platform</title>
+        <!--<link rel="stylesheet" href="LoginStyle.css">-->
+    </head>
+<body style="background:#f7f7f7" class="tnlmedia-header-is-active">
+    <nav class="js-header-nav main_nav">
+        <div class="headerGroup">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        關於有溫度<span class="caret"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs-block text-center" style="float: none;" href="https://www.tnlmedia.com/">
+                    <img class="logo-group group-light" src="NewsLogo.svg" alt="TNL Media Group Logo">
+                    </a>
+                </div>
+                
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">關於我們<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">平台介紹</a></li>
+                                <li><a href="#">團隊成員</a></li>
+                            </ul> 
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">周邊科技<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">有溫度科技</a></li>
+                                <li><a href="#">子集團一</a></li>
+                                <li><a href="#">子集團二</a></li>
+                                <li><a href="#">子集團三</a></li>
+                            </ul> 
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">多元服務<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-position"><a href="#">程式開發</a></li>
+                                <li><a href="#">虛擬實境</a></li>
+                                <li><a href="#">論文校稿</a></li>
+                                <li><a href="#">網站開發</a></li>
+                                <li><a href="#">跨國合作</a></li>
+                            </ul> 
+                        </li>
+                        <li class="header-group-item header-group-item-logo">
+                            <a class="logo-group-link" target="_blank" rel="noopener noreferrer" href="https://www.tnlmedia.com/">
+                            <img class="logo-group group-light" src="NewsLogo.svg" alt="TNL Media Group Logo">
+                            </a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">與我們合作<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">新創加速器</a></li>
+                                <li><a href="#">VR互動科技</a></li>
+                                <li><a href="#">VR線上策展</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">加入我們</a></li>
+                        <li><a href="#">新聞中心</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+
+            <span><img class="img-responsive" src="longImg.png" alt="TNL Media Group Logo"></span>
+
+            <span class="barsPos">
+                <button class="bars" type="button"><i class="far fa-user-circle fa-2x"></i></button>
+                <button class="bars" type="button"><i class="fas fa-bars fa-2x"></i></button>
+            </span>
+
+            <span class="searchbar">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">
+                        <i class="fa fa-search" ></i>
+                    </button>
+                </div>
+                <input type="text" class="form-control" placeholder="Search this blog">
+            </span>
+
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray; margin-top:10px">
+
+            <div class="thirdNav">
+                <span>
+                    <ul id="Horizon">
+                        <a title="數位敘事" href="/digital-stories">
+                            <li>數位敘事</li>
+                        </a>
+                        <a href="https://www.thenewslens.com/channel/hk">
+                            <li> 香港 </li>
+                        </a>
+                        <a href="https://www.thenewslens.com/channel/asean">
+                            <li> 東南亞 </li>
+                        </a>
+                        <a href="https://www.thenewslens.com/channel/2019-nCoV">
+                            <li> COVID-19 </li>
+                        </a>
+                        <a title="網路沙龍" href="/salon" class="gtm-track" data-gtm-category="salon_navi_to_TNLsalon" data-gtm-label="salon_nav_to_TNLsalon">
+                            <li>網路沙龍</li>
+                        </a>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="thirdNav">
+                <span>
+                    <ul id="Horizon">
+                        <a href="https://www.thenewslens.com/interactive/152089?utm_source=top_bar">
+                            <li>｜COVID-19 疫苗資訊</li>
+                        </a>
+                        <a href="https://www.thenewslens.com/feature/yzinsurance?utm_source=top_bar">
+                            <li>｜曉姿買保險</li>
+                        </a>
+                        <a href="https://www.thenewslens.com/feature/yzmoney?utm_source=top_bar">
+                            <li>｜曉姿學理財</li>
+                        </a>
+                        <a href="https://www.thenewslens.com/sdgs?utm_source=top_bar">
+                            <li>｜暖世代永續行動</li>
+                        </a>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="language">
+                <ul style="margin-bottom: 0px;">
+                    <a href="https://international.thenewslens.com/">
+                        <li>English Edition</li>
+                    </a>
+                </ul>
+            </div>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray; margin-top:40px"/>
+
+        </div>
+
+    </nav>
+    <!-- news lens html-->
+    <section>
+        <!--疫情資訊欄-->
+        <script defer="" src="https://datastore.thenewslens.com/infographic/tnl-covid-19-dashboard/tnl-covid-19-dashboard.js"></script>
+        <div id="tnl-covid-19-dashboard"></div>
+        <!--疫情資訊欄-->
+        <div class="first-zone zone">
+            <div class="row">
+                <div class="col-md-8">
+                    <article itemprop="articleBody">
+                        <div class="standard-container">
+                            <div class="index-img-box">
+                                <a href="https://www.thenewslens.com/article/155185">
+                                    <div class="lazy-container" style="padding-bottom: 60%;">
+                                        <img data-srcset="https://image3.thenewslens.com/2021/8/5ria8xua8kc0ybarsuuttsbs7seekx.jpg?auto=compress&amp;h=450&amp;q=80&amp;w=750 750w, https://image2.thenewslens.com/2021/8/5ria8xua8kc0ybarsuuttsbs7seekx.jpg?auto=compress&amp;h=300&amp;q=80&amp;w=500 500w, https://image1.thenewslens.com/2021/8/5ria8xua8kc0ybarsuuttsbs7seekx.jpg?auto=compress&amp;h=240&amp;q=80&amp;w=400 400w, https://image6.thenewslens.com/2021/8/5ria8xua8kc0ybarsuuttsbs7seekx.jpg?auto=compress&amp;h=210&amp;q=80&amp;w=350 350w, https://image5.thenewslens.com/2021/8/5ria8xua8kc0ybarsuuttsbs7seekx.jpg?auto=compress&amp;h=180&amp;q=80&amp;w=300 300w " src="FristZone.jpg" alt="" class="lazyload"/>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="margin-bottom:39px;" class="index-main-box">
+                                <div class="time"> 2021/08/18 </div>
+                                <h3 class="categories">
+                                    <a href="https://www.thenewslens.com/category/world"> 國際 </a>
+                                </h3>
+                                <h3 class="author">
+                                    <a href="https://www.thenewslens.com/author/tnl" title="TNL 編輯"> TNL 編輯 </a>
+                                </h3>
+                                <h2 class="article-title">
+                                    <header>
+                                        <a href="https://www.thenewslens.com/article/155185" title="塔利班首場官方記者會承諾保障婦女權利，G7下週召開視訊峰會聚焦阿富汗人道援助">塔利班首場官方記者會承諾保障婦女權利，G7下週召開視訊峰會聚焦阿富汗人道援助</a>
+                                    </header>
+                                </h2>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+    // calculating margin-left to align it to center;
+    var width = $('.justified').width();
+    $('.justified').css('margin-left', '-' + (width / 2)+'px');
+
+    $('.dropdown').on('shown.bs.dropdown', function(e) {
+        $(this).find('.caret').toggleClass('rotate-180');
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    $('.dropdown').on('hidden.bs.dropdown', function(e) {
+        $(this).find('.caret').toggleClass('rotate-180');
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(0);
+    });
+</script>
+
+
+

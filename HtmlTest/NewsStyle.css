@@ -101,7 +101,7 @@ hr{
     float: right;
     align-items: center;
     margin-right: 10px;
-    margin-top: 4px;
+    margin-top: 0px;
     margin-left: auto; /*讓他跑到畫面最右邊*/ 
 }
 .language a{
@@ -110,6 +110,26 @@ hr{
     text-decoration: none;  /* 移除超連結底線 */  
 }
 /*********************控制第三行導覽列的 css參數***********************/
+
+/*********************控制疫情資訊的 css參數***********************/
+.case-wrap{
+    align-items: center;
+    margin-top: -24px;
+}
+/*********************控制疫情資訊的 css參數***********************/
+
+/*********************主體第一區塊的 css參數***********************/
+.zone{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.row{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+/*********************主體第一區塊的 css參數***********************/
+
+
 
 /*********************RWD nav bar*********************/
 @media (max-width: 991px) {
@@ -163,6 +183,9 @@ hr{
         margin-top: 0px;
     }
     .thirdNav{
+        display: none;
+    }
+    .case-wrap{
         display: none;
     }
 }
