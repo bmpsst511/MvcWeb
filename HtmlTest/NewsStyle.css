@@ -12,6 +12,7 @@
 
 .headerGroup{
     background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 25);
 }
 
 hr{
@@ -82,7 +83,7 @@ hr{
 /*********************控制第三行導覽列的 css參數***********************/
 #Horizon li{
     float:left;
-    margin-right:25px;
+    margin-right:20px;
     margin-top:0px;
     border:none;
 }
@@ -109,6 +110,7 @@ hr{
     color: inherit; /* 移除超連結顏色 */
     text-decoration: none;  /* 移除超連結底線 */  
 }
+
 /*********************控制第三行導覽列的 css參數***********************/
 
 /*********************控制疫情資訊的 css參數***********************/
@@ -127,12 +129,152 @@ hr{
     margin-right: -10px;
     margin-left: -10px;
 }
+.standard-container{
+    border-radius: 2px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 3px #eee;
+    margin-bottom: 20px;
+    height: auto;
+}
+.lazy-container{
+    display: block;
+    position: relative;
+    height: 0;
+}
+.lazy-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.index-img-box{
+    position: relative;
+    margin-bottom: 5px;
+}
+.index-main-box{
+    position: relative;
+    width: 75%;
+    z-index: 5;
+    margin: -30px auto 8px;
+    padding: 3% 8%;
+    border: 2.5px solid #555;
+    background-color: #fff;
+    text-align: center;
+}
+.index-main-box .author, .index-main-box .categories, .index-main-box .time{
+    padding: 0 4px 0 0;
+    color: #777;
+    font-size: 15px;
+    display: inline-block;
+}
+.index-main-box .categories{
+    position: relative;
+    margin: 0 10px;
+}
+.index-main-box .article-title{
+    color: #222;
+    font-weight: 700;
+    margin: 15px 0 5px;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 62px;
+    font-size: 22px;
+    line-height: 31px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: sans-serif;
+}
+.blog-box img, .index-img-box img, .video-box li .video-pic img{
+    width: 100%;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align:baseline
+}
+.index-main-box .article-title header{
+    width: 100%;
+}
 /*********************主體第一區塊的 css參數***********************/
 
-
+/***** 第一主體右側 *****/
+.col-md-4{
+    width: 33.3%;
+    float: left;
+}
+.index-info-box .categories{
+    color: #444;
+    position: relative;
+    margin: 0 10px;
+}
+.index-info-box .author{
+    max-width: 160px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.index-info-box .article-title{
+    color: #555;
+    margin: 10px 0 0;
+    display: block;
+    display: -webkit-box;
+    height: 38px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: sans-serif;
+}
+.blog-box .sponsored-block > li > a, .index-info-box .article-title {
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow:ellipsis
+}
+.first-section .authorRightSide, .first-section .categoriesRightSide, .first-section .timeRightSide{
+    padding: 0 2px 0 0;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.4 !important;
+    display: inline-block;
+    vertical-align: top;
+}
+.first-section .authorRightSide a, .first-section .categoriesRightSide a, .first-section .timeRightSide a{
+    color: #153b5f;
+    font-family: sans-serif;
+}
+a {
+    color: #153b5f;
+    text-decoration: none;
+}
+a:hover {
+    color:#009FDB;
+    text-decoration: none;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left:10px
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block
+}
+.index-info-box {
+    margin-top: 8px;
+    margin-bottom:6px
+}
+/***** 第一主體右側 *****/
 
 /*********************RWD nav bar*********************/
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .header-group-item-logo{
         display: none !important /*當畫面縮小時，隱藏 nav bar 中間的圖片*/
     }
@@ -188,5 +330,34 @@ hr{
     .case-wrap{
         display: none;
     }
+    /***** 第一主體RWD *****/
+    .standard-container{
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+    .index-main-box{
+        padding-top: 15px;
+        margin: 0 auto !important;
+        width: 100%;
+    }
+    .index-main-box .author, .index-main-box .categories, .index-main-box .time{
+        font-size: 12px;
+    }
+    .index-main-box .article-title{
+        font-size: 17px;
+        margin-top: 5px;
+        overflow: auto;
+        height: auto;
+        display: block;
+        font-family: sans-serif;
+    }
+    /***** 第一主體RWD *****/
+
+    /***** 第一主體右側 *****/
+    .col-md-4{
+        width: 100%;
+    }
+    /***** 第一主體右側 *****/
+
 }
 /*********************RWD nav bar*********************/
