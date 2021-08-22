@@ -476,7 +476,92 @@ ol, ul {
 .cards-index-section .zone {
     overflow:hidden;
 }
+.cards-index-section .btn {
+    margin-bottom: 25px;
+    margin-top:-15px
+}
+.keylazyBtn {
+    display: table;
+    border: 1px solid #ccc;
+    color: #777;
+    padding: 10px 14px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 15px auto 5px;
+    cursor: pointer;
+    transition:all .2s
+}
+.keylazyBtn:hover {
+    background: #777;
+    color: #fff;
+    border-color:#777
+}
 /********************* 關鍵懶人包專區 *********************/
+
+/********************* 精選影音 *********************/
+.Videocol-md-4 {
+    width:33.33333333%;
+    float: left;
+}
+
+.Videocol-md-4 .standard-container{
+    border-radius: 2px;
+    padding: 14px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 3px #eee;
+    margin-bottom: 20px;
+    height: auto;
+}
+.standard-container .title, .standard-container h5 {
+    font-size: 14px;
+    margin-bottom:10px
+}
+.video-box .title, .video-box h5 {
+    font-size: 14px;
+    line-height:1.45em
+}
+.video-box li {
+    min-height: 60px;
+    line-height: 1.4em;
+    position: relative;
+    margin-bottom:15px
+}
+.video-box li:last-child {
+    margin-bottom:-5px
+}
+.video-box li .video-info {
+    margin-left:125px
+}
+.video-box li .video-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height:60px
+}
+.main-container {
+    background: #fff;
+    border: 2px solid #333;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom:20px
+}
+.main-container .video-iframe-box {
+    height:405px
+}
+.main-container hr {
+    border: none;
+    border-top: solid 1px #444;
+    margin:10px auto
+}
+.video-main-box {
+    margin: 5px auto 0;
+    width: 100%;
+    border:none
+}
+/********************* 精選影音 *********************/
+
 
 
 
