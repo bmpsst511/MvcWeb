@@ -693,6 +693,27 @@ ol, ul {
     }
     /********************* 關鍵懶人包專區 *********************/
 
+    /********************* 精選影音 *********************/
+    .video-box li .video-info{
+        margin-left: 105px;
+    }
+    .Videocol-md-4{
+        width: 100%;
+        float: none;
+    }
+    .video-box .title h5{
+        font-size: 14px;
+    }
+    .tag{
+        display: none;
+    }
+    .video-box li .video-pic {
+        width: 90px;
+        height:54px
+    }
+    
+    /********************* 精選影音 *********************/
+
 
 }
 /*********************RWD nav bar*********************/
