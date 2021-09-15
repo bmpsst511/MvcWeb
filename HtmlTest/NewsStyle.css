@@ -10,6 +10,15 @@
     transform: translatex(-50%);
 }
 
+@media (max-width: 992px) {
+    .navbar-center {
+        position: relative;
+        left: 50%;
+        transform: translatex(-50%);
+        font-size: 13px;
+    }
+}
+
 .headerGroup{
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 25);
@@ -91,10 +100,21 @@ hr{
 .thirdNav{
     margin-top: 0px;
 }
+@media (max-width: 992px) {
+    .thirdNav2{
+        display: none;
+    }
+}
 .thirdNav a{
     list-style:none;
     color: inherit; /* 移除超連結顏色 */
     text-decoration: none;  /* 移除超連結底線 */ 
+}
+
+@media (max-width: 992px) {
+    .thirdNav2{
+        display: none;
+    }
 }
 
 .language{
@@ -105,6 +125,7 @@ hr{
     margin-top: 0px;
     margin-left: auto; /*讓他跑到畫面最右邊*/ 
 }
+
 .language a{
     list-style:none;
     color: inherit; /* 移除超連結顏色 */
@@ -504,6 +525,13 @@ ol, ul {
     float: left;
 }
 
+@media (max-width: 992px) {
+    .Videocol-md-4{
+        width: 100%;
+        float: none;
+    }
+}
+
 .Videocol-md-4 .standard-container{
     border-radius: 2px;
     padding: 14px;
@@ -576,10 +604,26 @@ ol, ul {
 .project-container > .row {
     margin:0 30px
 }
+@media (max-width: 768px) {
+    .project-container > .row > .col-md-8 {
+        order:1
+    }
+    .visible-xs{
+        display: block;
+    }
+}
+
 .project-img-box {
     padding-left: 20px;
     margin-right:-10px
 }
+@media (max-width: 768px) {
+    .project-img-box {
+        margin: 0 -20px 25px;
+        padding: 0;
+    }
+}
+
 .project-img-box img {
     width:100%
 }
